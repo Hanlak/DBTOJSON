@@ -4,6 +4,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import lombok.Data;
 
+import java.math.BigInteger;
+
 @Data
 public class ContactDataDto {
 
@@ -11,5 +13,5 @@ public class ContactDataDto {
 	private String communmethod;
 
 	@JsonProperty("commun_address")
-	private String communAddress;
+	private BigInteger communAddress;
 }

@@ -1,27 +1,27 @@
 package com.dbtojson.controller;
 
+import com.dbtojson.dto.ApplicationDto;
+import com.dbtojson.service.DbJsonService;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.dbtojson.dto.MerchantDto;
-import com.dbtojson.service.DbJsonService;
-
 @RestController
 public class DbJsonController {
-	@Autowired
-	DbJsonService dbJsonService;
+    @Autowired
+    DbJsonService dbJsonService;
 
-	@GetMapping("/dbToJson/health")
-	public ResponseEntity<String> checkHealth() {
-		return new ResponseEntity<>("Health OK!!", HttpStatus.OK);
-	}
+    @GetMapping("/dbToJson/health")
+    public ResponseEntity<String> checkHealth() {
+        return new ResponseEntity<>("Health OK!!", HttpStatus.OK);
+    }
 
-	@GetMapping("/dbToJson/find/merchant")
-	ResponseEntity<MerchantDto> getMerchant() {
-		MerchantDto merchantDto = dbJsonService.getData(301);
-		return new ResponseEntity<>(merchantDto,HttpStatus.OK);
-	}
+    @GetMapping("/dbToJson/find/merchant")
+    ResponseEntity<ApplicationDto> getMerchant() throws JsonProcessingException {
+        ApplicationDto applicationDto = dbJsonService.getApplicationData(301);
+        return new ResponseEntity<>(applicationDto, HttpStatus.OK);
+    }
 }
