@@ -23,7 +23,7 @@ public class TerminalDto {
 	private int terminalTemplate;
 
 	@JsonProperty("device_id")
-	private String deviceId;
+	private int deviceId;
 
 	@JsonProperty("terminal_quantity")
 	private int terminalQuantity;

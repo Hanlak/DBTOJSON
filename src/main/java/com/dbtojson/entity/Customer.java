@@ -31,4 +31,6 @@ public class Customer {
 	private String mobile;
 	@Column(name = "PREF_LANG")
 	private String preferLang;
+	@Column(name = "CURR_APP_STATUS")
+	private int currentAppStatus;
 }

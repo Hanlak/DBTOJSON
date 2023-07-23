@@ -16,7 +16,7 @@ public class AddressDto {
 	@JsonProperty("country")
     private String country;
 	
-	//@JsonProperty("address")
+	@JsonProperty("address_name")
     private AddressNameDto addressName;
 	
 	@JsonProperty("house")

@@ -21,7 +21,7 @@ public class ContractDto {
 	private String contractType;
 
 	@JsonProperty("product_id")
-	private int productId;// double check data type
+	private int productId;
 
 	@JsonProperty("contract_number")
 	private int contractNumber;

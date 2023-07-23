@@ -9,12 +9,12 @@ public class MerchantDto {
 
 	@JsonProperty("command")
 	private String command;
-	
-	@JsonProperty("merchant_number")
-	private String merchantNumber;
-	
+
 	@JsonProperty("merchant_name")
 	private String merchantName;
+
+	@JsonProperty("merchant_number")
+	private String merchantNumber;
 	
 	@JsonProperty("merchant_label")
 	private String merchantLabel;
@@ -24,13 +24,12 @@ public class MerchantDto {
 	
 	@JsonProperty("mcc")
 	private int mcc;
-	
-	//@JsonProperty("contact")
+	@JsonProperty("contact")
 	private ContactDto contact;
-	
-	//@JsonProperty("address");
+
+	@JsonProperty("address")
 	private AddressDto address;
-	
-	//@JsonProperty("terminal")
+
+	@JsonProperty("terminal")
 	private TerminalDto terminal;
 }
