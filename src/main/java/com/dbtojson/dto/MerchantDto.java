@@ -10,14 +10,11 @@ public class MerchantDto {
 	@JsonProperty("command")
 	private String command;
 
-	@JsonProperty("currentAppStatus")
-	private int currentAppStatus;
+	@JsonProperty("merchant_name")
+	private String merchantName;
 
 	@JsonProperty("merchant_number")
 	private String merchantNumber;
-	
-	@JsonProperty("merchant_name")
-	private String merchantName;
 	
 	@JsonProperty("merchant_label")
 	private String merchantLabel;
@@ -26,5 +23,13 @@ public class MerchantDto {
 	private String merchantType;
 	
 	@JsonProperty("mcc")
-	private String mcc;
+	private int mcc;
+	@JsonProperty("contact")
+	private ContactDto contact;
+
+	@JsonProperty("address")
+	private AddressDto address;
+
+	@JsonProperty("terminal")
+	private TerminalDto terminal;
 }
