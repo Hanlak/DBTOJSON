@@ -1,28 +1,30 @@
 package com.dbtojson.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
 import lombok.Data;
 
+import javax.persistence.*;
+
 @Entity
-@Table(name="account")
+@Table(name = "Account")
 @Data
 public class Account {
 
-	
-	@Id
-	@Column(name = "Id")
-	private int Id;
+    @javax.persistence.Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int Id;
 
-	@Column(name = "ACC_NUM")
-	private String accountNumber;
+    @Column(name = "CURR_APP_STATUS")
+    private int currAppStatus;
 
-	@Column(name = "CURRENCY")
-	private String currency;
+    @Column(name = "INSTITUTION_ID")
+    private int institutionId;
 
-	@Column(name = "ACCCTYPE")
-	private String accountType;
+    @Column(name = "ACC_NUM")
+    private String accountNumber;
+
+    @Column(name = "CURRENCY")
+    private String currency;
+
+    @Column(name = "ACCCTYPE")
+    private String accountType;
 }

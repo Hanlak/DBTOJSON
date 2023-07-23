@@ -16,6 +16,9 @@ public class Merchant {
 	@Column(name = "Id")
 	private int Id;
 
+	@Column(name = "CURR_APP_STATUS")
+	private int currentAppStatus;
+
 	@Column(name = "MERCH_ID")
 	private String merchantNumber;
 
@@ -27,4 +30,7 @@ public class Merchant {
 
 	@Column(name = "MERCH_CODE")
 	private String mcc;
+
+	@Column(name = "INSTITUTION_ID")
+	private int institutionId;
 }
