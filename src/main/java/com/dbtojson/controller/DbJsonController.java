@@ -22,7 +22,7 @@ public class DbJsonController {
         return new ResponseEntity<>("Health OK!!", HttpStatus.OK);
     }
 
-    @GetMapping("/dbToJson/find/merchant")
+    @GetMapping("/dbToJson/find/application")
     ResponseEntity<Body> getMerchant() throws IOException {
         Body body = dbJsonService.getApplicationData(301);
         return new ResponseEntity<>(body, HttpStatus.OK);
