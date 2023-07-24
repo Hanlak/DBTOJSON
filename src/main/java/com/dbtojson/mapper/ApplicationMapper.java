@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.Date;
 
 public class ApplicationMapper {
-    public static ApplicationDto mapperDto(Customer customer, Merchant merchant, Account account){
+    public static Body mapperDto(Customer customer, Merchant merchant, Account account){
         ApplicationDto applicationDto = new ApplicationDto();
 
         //ApplicationRootElements
@@ -144,7 +144,8 @@ public class ApplicationMapper {
         customerDto.setContract(contractDto);
         //Application;
         applicationDto.setCustomer(customerDto);
-
-        return applicationDto;
+        Body body = new Body();
+        body.setApplication(applicationDto);
+        return body;
     }
 }
