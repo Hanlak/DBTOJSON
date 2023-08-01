@@ -5,12 +5,12 @@ import lombok.Data;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "Account")
+@Table(name = "account")
 @Data
 public class Account {
 
     @javax.persistence.Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+  //  @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int Id;
 
     @Column(name = "CURR_APP_STATUS")
@@ -28,3 +28,4 @@ public class Account {
     @Column(name = "ACCCTYPE")
     private String accountType;
 }
+

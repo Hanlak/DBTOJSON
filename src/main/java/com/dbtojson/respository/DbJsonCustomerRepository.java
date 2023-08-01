@@ -1,9 +1,10 @@
 package com.dbtojson.respository;
 
-import com.dbtojson.entity.Customer;
+import java.util.Optional;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.util.Optional;
+import com.dbtojson.entity.Customer;
 
 public interface DbJsonCustomerRepository extends JpaRepository<Customer, Long> {
     Optional<Customer> findByInstitutionId(int institutionId);

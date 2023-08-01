@@ -22,7 +22,7 @@ public class ApplicationMapper {
         applicationDto.setApplicationStatus("APST0006");
         applicationDto.setOperatorId("Admin");
         applicationDto.setInstitutionId(customer.getInstitutionId());
-        applicationDto.setAgentId(10000001);
+        applicationDto.setAgentId(1001);
         applicationDto.setCustomerType(customer.getCustomerType());
         //Customer Elements
         CustomerDto customerDto = new CustomerDto();
@@ -57,7 +57,7 @@ public class ApplicationMapper {
         BigInteger bigInteger = new BigInteger("4728428779");
         contactDataDto.setCommunAddress(bigInteger);
         //ContactDto Setup
-        contactDto.setContactData(contactDataDto);
+        contactDto.setContactData(contactDataDto);//test with int
 
         //Address:
         AddressDto addressDto = new AddressDto();
@@ -85,11 +85,11 @@ public class ApplicationMapper {
         //Merchant
         MerchantDto merchantDto = new MerchantDto();
         merchantDto.setCommand("update");
-        merchantDto.setMerchantNumber(merchant.getMerchantNumber());
+        merchantDto.setMerchantNumber(merchant.getMerchantNumber());///check data type matching?
         merchantDto.setMerchantName(merchant.getMerchantName());
         merchantDto.setMerchantLabel(merchant.getMerchantName());
         merchantDto.setMerchantType(merchant.getMerchantType());
-        merchantDto.setMcc(6536);
+        merchantDto.setMcc(6536);//data  type mismatch for entity and json
 
         //TODO: contact and address should have a different mapper to pass customer and merchant related info; but for now
         //TODO: setting the common object

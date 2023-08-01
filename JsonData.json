@@ -1,0 +1,115 @@
+{
+  "applicaton" : {
+    "customer" : {
+      "command" : "CMMDCREX",
+      "customer_number" : 697,
+      "customer_category" : "CCTGORDN",
+      "customer_relation" : "RSCBEXTR",
+      "account_scheme" : 1,
+      "resident" : 1,
+      "nationality" : "643",
+      "company" : {
+        "companyName" : {
+          "company_short_name" : "Food N Drinks Incorporation",
+          "company_full_name" : "Food N Drinks Inc"
+        },
+        "identityCard" : null,
+        "command" : "CMMDCRUP",
+        "incorp_form" : "INCF0065"
+      },
+      "contact" : {
+        "contactData" : {
+          "commun_method" : "CMNM0001",
+          "commun_address" : 4728428779
+        },
+        "command" : "CMMDCRUP",
+        "contact_type" : "CNTTPRMC",
+        "preferred_lang" : "LANGENG"
+      },
+      "address" : {
+        "command" : "Address Command",
+        "address_type" : "Address Type",
+        "country" : "India",
+        "address_name" : {
+          "region" : "Bellandur",
+          "city" : "Banglore",
+          "street" : "MG road"
+        },
+        "house" : "17",
+        "apartment" : "Address Apartment",
+        "postal_code" : "22222"
+      },
+      "contract" : {
+        "merchant" : {
+          "command" : "update",
+          "merchant_name" : "ABC Mart",
+          "merchant_number" : "923456",
+          "merchant_label" : "ABC Mart",
+          "merchant_type" : "Retail",
+          "mcc" : 6536,
+          "contact" : {
+            "contactData" : {
+              "commun_method" : "CMNM0001",
+              "commun_address" : 4728428779
+            },
+            "command" : "CMMDCRUP",
+            "contact_type" : "CNTTPRMC",
+            "preferred_lang" : "LANGENG"
+          },
+          "address" : {
+            "command" : "Address Command",
+            "address_type" : "Address Type",
+            "country" : "India",
+            "address_name" : {
+              "region" : "Bellandur",
+              "city" : "Banglore",
+              "street" : "MG road"
+            },
+            "house" : "17",
+            "apartment" : "Address Apartment",
+            "postal_code" : "22222"
+          },
+          "terminal" : {
+            "command" : "CMMDCREX",
+            "terminal_type" : "TRMT0003",
+            "standard_id" : 1001,
+            "version_id" : 2301,
+            "terminal_template" : 10000007,
+            "device_id" : 10000017,
+            "terminal_quantity" : 1
+          }
+        },
+        "service" : [ {
+          "service_object" : {
+            "start_date" : "2015-01-13"
+          }
+        }, {
+          "service_object" : {
+            "start_date" : "2015-01-14"
+          }
+        } ],
+        "account" : {
+          "command" : "CMMDCREX",
+          "account_number" : "",
+          "currency" : "643",
+          "account_type" : "ACTP0200",
+          "account_object" : {
+            "account_link_flag" : 1
+          }
+        },
+        "command" : "CMMDCREX",
+        "contract_type" : "CNTPMRCM",
+        "product_id" : 1,
+        "contract_number" : 736,
+        "start_date" : "2023-08-01T16:09:02.607+00:00"
+      }
+    },
+    "application_type" : "APTPACQA",
+    "application_flow_id" : 2001,
+    "application_status" : "APST0006",
+    "operator_id" : "Admin",
+    "institution_id" : 302,
+    "agent_id" : 1001,
+    "customer_type" : "No"
+  }
+}
